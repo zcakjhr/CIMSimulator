@@ -27,9 +27,9 @@ CIMSimulator/
 │   └── test_CoherentIsingMachine.jl   # Unit tests
 ├── report/
 │   ├── report.pdf                     # Full technical report
-│   └── executive_summary.pdf          # High-level findings
+│   ├── slides.pdf                     # Presentation Slides (for non-experts)
+│   └── summary.pdf                    # High-level findings
 ├── Dockerfile                         # Docker config for environment setup
-├── Manifest.toml                      # Julia package lock file
 ├── Project.toml                       # Project environment and dependencies
 └── LICENSE                            # License information
 ```
