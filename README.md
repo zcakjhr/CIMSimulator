@@ -25,20 +25,22 @@ This repository contains a modular and extensible simulator for Coherent Ising M
 
 ## 🗂️ Repository Structure
 
-CIMSimulator/ 
-├── src/ 
-│ ├── CoherentIsingMachine.jl # Core simulation engine 
-│ ├── IO.jl # Handles input/output and config parsing 
-│ └── Main.jl # CLI entry point 
-├── test/ 
-│ └── test_CoherentIsingMachine.jl # Unit tests 
-├── report/ 
-│ ├── report.pdf # Full technical report 
-│ └── executive_summary.pdf # High-level findings 
-├── Dockerfile # Docker config for environment setup 
-├── Manifest.toml # Julia package lock file 
-├── Project.toml # Project environment and dependencies 
-└── LICENSE
+```plaintext
+CIMSimulator/
+├── src/
+│   ├── CoherentIsingMachine.jl        # Core simulation engine
+│   ├── IO.jl                          # Handles input/output and config parsing
+│   └── Main.jl                        # CLI entry point
+├── test/
+│   └── test_CoherentIsingMachine.jl   # Unit tests
+├── report/
+│   ├── report.pdf                     # Full technical report
+│   └── executive_summary.pdf          # High-level findings
+├── Dockerfile                         # Docker config for environment setup
+├── Manifest.toml                      # Julia package lock file
+├── Project.toml                       # Project environment and dependencies
+└── LICENSE                            # License information
+```
 
 ---
 
@@ -55,6 +57,7 @@ docker build -t CIMSimulator .
 # Step 2: Run the simulator interactively
 docker run --rm -ti CIMSimulator
 ```
+---
 
 ### 🧠 Example Workflow
 
@@ -103,7 +106,7 @@ Julius H. Ramlau, James S. Cummins, and Natalia G. Berloff
 --- 
 
 ## 📜 License
-Distributed under the MIT License(./LICENSE).
+Distributed under the [MIT License](./LICENSE).
 
 ## 🌐 Related Topics
 Coherent Ising Machines | Optical Computing | Nonlinear Dynamics | Combinatorial Optimisation | Analog Simulation | Julia for Physics
