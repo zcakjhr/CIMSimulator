@@ -6,9 +6,10 @@
 
 ## 📊 Project Badges
 
-[![Build Status](https://img.shields.io/github/workflow/status/zcakjhr/mphil-thesis/CI?label=Build&logo=github)](https://github.com/zcakjhr/CIMSimulator/actions)  
-[![License](https://img.shields.io/github/license/zcakjhr/CIMSimulator)](https://github.com/zcakjhr/CIMSimulator/blob/main/LICENSE)  
-[![Version](https://img.shields.io/github/v/tag/zcakjhr/CIMSimulator?label=Version)](https://github.com/zcakjhr/CIMSimulator/releases)
+![Build Status](https://img.shields.io/github/workflow/status/zcakjhr/my-thesis/CI) 
+![License](https://img.shields.io/badge/license-MIT-blue) 
+![Version](https://img.shields.io/github/v/release/zcakjhr/my-thesis) 
+![Code Coverage](https://img.shields.io/codecov/c/github/zcakjhr/my-thesis) 
 
 ---
 
