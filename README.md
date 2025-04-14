@@ -1,53 +1,109 @@
-# Coherent Ising Machine Simulator (CIMSimulator)
+# 💡 Coherent Ising Machine Simulator (`CIMSimulator`)
 
-## Overview 
-This repository contains a Julia implementation of a simulator for the Coherent Ising Machine (CIM). The CIMSimulator allows users to interactively explore different problem settings, methods, modulation strategies, and parameters related to the Coherent Ising Machine. 
+*A Julia-based simulator to explore the dynamics and optimization capabilities of Coherent Ising Machines (CIMs) — analog systems inspired by optical computing architectures for solving combinatorial problems.*
 
-## Contents
-- `src/`
-    - `CoherentIsingMachine.jl`: Main module for the CIM implementation.
-    - `IO.jl`: Module for handling input and output functionalities.
-    - `Main.jl`: Entry point script for launching the simulator.
-- `test/`
-    - `test_CoherentIsingMachine.jl`: Unit tests for the CIM implementation.
-- `Dockerfile`: Docker configuration file for building the simulator environment.
-- `report/`
-    - `report.pdf`: Detailed report on Chaotic Amplitude Control in Coherent Ising Machines and its application.
-    - `executive_summary.pdf`: Summary of key findings and conclusions from the report.
-- `LICENSE`
-- `Manifest.toml`, `Project.toml`: Julia project files specifying dependencies and environment configurations.
+---
 
-## Usage 
-### Docker Installation
-To run the CIMSimulator, Docker is used for easy setup and deployment:
-1. Build the docker image:
-    ```
-    docker build -t CIMSimulator .
-    ```
-2. Run the docker container:
-    ```
-    docker run --rm -ti CIMSimulator
-    ```
-### Example Workflow
-1. Launch the Simulator:
-    ```
-    docker run --rm -ti CIMSimulator
-    ```
-2. Follow On-screen Prompts:
-    Upon launching the simulator, users will be prompted to input various parameters and settings:
-    - Problem Definition: Specify the Ising problem to be solved or simulated.
-    - Method Selection: Choose from available methods (CIM, CIM-NLF, CIM-CAC, CIM-CFC, CIM-SFC) for simulating the CIM.
-    - Modulation Strategy: Define how parameters should be modulated over iterations.
-    - Parameter Configuration: State the parameter combination you wish to try out. 
+## 📊 Project Badges
 
-3. Run Simulation:
-    - Execute the simulation based on the provided inputs.
+[![Build Status](https://img.shields.io/github/workflow/status/zcakjhr/mphil-thesis/CI?label=Build&logo=github)](https://github.com/zcakjhr/CIMSimulator/actions)  
+[![License](https://img.shields.io/github/license/zcakjhr/CIMSimulator)](https://github.com/zcakjhr/CIMSimulator/blob/main/LICENSE)  
+[![Version](https://img.shields.io/github/v/tag/zcakjhr/CIMSimulator?label=Version)](https://github.com/zcakjhr/CIMSimulator/releases)
 
-### Testing
-Unit tests are provided in `test/test_CoherentIsingMachine.jl` to ensure the correctness of the CIM implementation. To run tests, execute:
+---
+
+## 📚 Overview
+
+This repository contains a modular and extensible simulator for Coherent Ising Machines, implemented in Julia. Users can interactively explore:
+
+- Various **Ising problem configurations**
+- Multiple **simulation methods** (including chaotic modulation strategies)
+- Dynamic **parameter tuning and modulation**
+- Performance of different **control schemes** (e.g., CIM-CAC, CIM-CFC)
+
+---
+
+## 🗂️ Repository Structure
+
+CIMSimulator/ 
+├── src/ 
+│ ├── CoherentIsingMachine.jl # Core simulation engine 
+│ ├── IO.jl # Handles input/output and config parsing 
+│ └── Main.jl # CLI entry point 
+├── test/ 
+│ └── test_CoherentIsingMachine.jl # Unit tests 
+├── report/ 
+│ ├── report.pdf # Full technical report 
+│ └── executive_summary.pdf # High-level findings 
+├── Dockerfile # Docker config for environment setup 
+├── Manifest.toml # Julia package lock file 
+├── Project.toml # Project environment and dependencies 
+└── LICENSE
+
+---
+
+## 🚀 Quick Start
+
+### 📦 Run with Docker
+
+Make sure [Docker](https://www.docker.com/) is installed.
+
+```bash
+# Step 1: Build the Docker image
+docker build -t CIMSimulator .
+
+# Step 2: Run the simulator interactively
+docker run --rm -ti CIMSimulator
 ```
+
+### 🧠 Example Workflow
+
+1. **Launch the Simulator**  
+    ```bash
+    docker run --rm -ti CIMSimulator
+    ```
+
+2. **Follow On-screen Prompts**
+    - 🔧 **Problem Definition:** Define your Ising Hamiltonian or select from predefined cases
+    - 🧪 **Method Selection:** Choose a simulation type:
+        - CIM 
+        - CIM - NLF
+        - CIM - CAC (Chaotic Amplitude Control)
+        - CIM - CFC (Chaotic Feedback Control)
+        - CIM - SFC (Separable Feedback Control)
+    - 📈 **Modulation Strategy:** Specify how amplitudes or gain change over time
+    - ⚙️ **Parameter Configuration:** Fine-tune your experiment parameters
+
+3. **Run the Simulation**
+
+--- 
+
+## ✅ Testing
+Unit tests are included to verify simulation integrity:
+```bash
 julia test/test_CoherentIsingMachine.jl
 ```
+Ensure you have the required dependencies from `Project.toml`.
 
-# Contributors
+--- 
+
+## 📄 Report
+
+- 📘 [Full Report (PDF)](./report/report.pdf)  
+  *"Chaotic Amplitude Control in Coherent Ising Machines and Its Applications"*
+
+- 📑 [Executive Summary](./report/executive_summary.pdf)  
+  Key findings and methodology overview.
+
+--- 
+
+## 👥 Contributors
 Julius H. Ramlau, James S. Cummins, and Natalia G. Berloff
+
+--- 
+
+## 📜 License
+Distributed under the MIT License(./LICENSE).
+
+## 🌐 Related Topics
+Coherent Ising Machines | Optical Computing | Nonlinear Dynamics | Combinatorial Optimisation | Analog Simulation | Julia for Physics
