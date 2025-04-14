@@ -85,7 +85,7 @@ Ensure you have the required dependencies from `Project.toml`.
 ## 📄 Report
 
 - 📘 [Full Report (PDF)](./report/report.pdf)  
-  *"Chaotic Amplitude Control in Coherent Ising Machines and Its Applications"*
+  *"Chaotic Amplitude Control for the Ising Minimization using Optical Parametric Oscillator Systems"*
 
 - 📑 [Executive Summary](./report/summary.pdf)  
   Key findings and methodology overview.
