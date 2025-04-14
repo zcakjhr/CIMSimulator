@@ -4,15 +4,6 @@
 
 ---
 
-## 📊 Project Badges
-
-![Build Status](https://img.shields.io/github/workflow/status/zcakjhr/my-thesis/CI) 
-![License](https://img.shields.io/badge/license-MIT-blue) 
-![Version](https://img.shields.io/github/v/release/zcakjhr/my-thesis) 
-![Code Coverage](https://img.shields.io/codecov/c/github/zcakjhr/my-thesis) 
-
----
-
 ## 📚 Overview
 
 This repository contains a modular and extensible simulator for Coherent Ising Machines, implemented in Julia. Users can interactively explore:
